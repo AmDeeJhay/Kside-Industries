@@ -1,0 +1,33 @@
+// Define your color variables
+$primary-color: #000;
+$secondary-color: #f2f2f2;
+$text-color: #000;
+$footer-bg: #0a0a0a;
+
+// Global styles
+html{
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins';
+  color: $text-color;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: $secondary-color;
+}
+
+a {
+  color: $text-color;
+  text-decoration: none;
+  
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+h1, h2, h3 {
+  color: $primary-color;
+}
