@@ -16,12 +16,16 @@
 
     .close-modal {
       position: absolute;
-      top: 1rem;
-      right: 1rem;
-      background: transparent;
+      top: 3rem;
+      right: 5rem;
+      background: #fff;
+      border-radius: 100px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
       border: none;
       font-size: 1.5rem;
-      color: #fff;
+      font-weight: 900;
+      font-family: 'poopins';
+      color: #000;
       cursor: pointer;
     }
 
@@ -43,7 +47,7 @@
         textarea {
           width: 95%;
           padding: 0.5rem;
-          border: 1px solid #ccc;
+          border: 1px solid #333;
           border-radius: 9px;
           font-size: 0.8rem;
           font-weight: 500;
