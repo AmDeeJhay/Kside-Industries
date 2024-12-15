@@ -5,7 +5,7 @@ import project3Image from '../../../assets/images/3.png';
 
 const FeaturedProject = () => {
   return (
-    <section className="featured-projects">
+    <section id="Projects.jsx" className="featured-projects">
       <h2>Featured Projects</h2>
       <div className="projects-container">
         <div className="project-large">

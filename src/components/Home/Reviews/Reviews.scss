@@ -266,4 +266,85 @@
       }
     }
   }
+
+  @media (max-width: 1024px) {
+    .testimonials {
+      .testimonial-card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center; /* Ensure text content is centered */
+        max-width: 80%;
+      }
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .testimonials {
+      .testimonial-card {
+        gap: 1rem;
+        padding: 1rem;
+        align-items: center;
+        text-align: center;
+  
+        .left-section {
+          align-items: center;
+          text-align: center; /* Center text content */
+          
+          .client-photo {
+            margin: 0 auto; /* Center image horizontally */
+          }
+  
+          h3 {
+            text-align: center;
+            margin: 1rem auto;
+          }
+  
+          .position {
+            text-align: center;
+            margin: 0 auto;
+          }
+        }
+  
+        .right-section {
+          text-align: center; /* Center review text */
+          align-items: center;
+          .review {
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .testimonials {
+      .testimonial-card {
+        padding: 1rem;
+        gap: 0.5rem;
+        align-items: center;
+        text-align: center;
+  
+        .left-section {
+          align-items: center;
+          text-align: center;
+  
+          .client-photo {
+            margin: 0 auto;
+          }
+  
+          h3, .position {
+            text-align: center;
+          }
+        }
+  
+        .right-section {
+          text-align: center;
+  
+          .review {
+            text-align: center;
+          }
+        }
+      }
+    }
+  }  
 }

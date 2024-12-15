@@ -1,27 +1,36 @@
+// Partners Page JSX
+import React from 'react';
 import './Partners.scss';
 import monitor from '../../../assets/images/monitor.png';
 
-const ContactForm = () => {
+
+const partnersLogos = [
+  '/images/monitor.png',
+  '/images/monitor.png',
+  '/images/monitor.png',
+  '/images/monitor.png',
+  '/images/monitor.png',
+];
+
+const Partners = () => {
   return (
-    <section className="contact-section">
-      <div className="form-container">
-        <h2>Ready to Build<br /> Something Amazing?</h2>
-        <p>We are a full-service agency with experts ready to help. We’ll get back to<br /> you within 24 hours!</p>
-        <form className="contact-form">
-          <div className="input-group">
-            <input type="text" placeholder="First Name" required />
-            <input type="text" placeholder="Last Name" required />
-          </div>
-          <input type="email" placeholder="Email" required />
-          <textarea placeholder="Message" required></textarea>
-          <button type="submit">Send message</button>
-        </form>
+    <div className="partners-page">
+      <div className="partners-header">
+        <h1>Our Trusted Partners</h1>
+        <p>We are proud to collaborate with these amazing companies.</p>
       </div>
-      <div className="image-container">
-        <img src={monitor} alt="monitor" />
+
+      <div className="marquee-container">
+        <div className="marquee">
+          {partnersLogos.map((logo, index) => (
+            <div className="partner-logo" key={index}>
+              <img src={monitor} alt={`Partner ${index + 1}`} />
+            </div>
+          ))}
+        </div>
       </div>
-    </section>
+    </div>
   );
 };
 
-export default ContactForm;
+export default Partners;

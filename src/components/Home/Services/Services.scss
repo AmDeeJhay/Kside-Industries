@@ -9,7 +9,7 @@
     h1 {
       font-size: 1.6rem;
       color: #000;
-      font-weight: bold;
+      font-weight: 600;
     }
 
     p {
@@ -24,15 +24,10 @@
     justify-content: space-between;
     gap: 1.5rem;
 
-    @media screen and (max-width: 768px) {
-      flex-direction: column;
-      align-items: center;
-    }
-
     .service-card {
       background: #fff;
       border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
       padding: 1.5rem;
       text-align: center;
       flex: 1;
@@ -40,12 +35,12 @@
 
       &:hover {
         transform: translateY(-10px);
-        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
       }
 
       .service-icon {
-        width: 100px;
-        height: 100px;
+        width: 50%;
+        height: 50%;
         margin-bottom: 1rem;
         border-radius: 8px;
       }
@@ -61,6 +56,79 @@
         color: #000;
         line-height: 1.5;
       }
+    }
+  }
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 1024px) {
+  .services-page {
+    padding: 2rem 2rem; /* Reduce padding for smaller screens */
+
+    .services-header h1 {
+      font-size: 1.4rem; /* Adjust font size for header */
+    }
+
+    .services-header p {
+      font-size: 0.95rem; /* Slightly smaller font for description */
+    }
+  }
+
+  .services-list {
+    gap: 1rem; /* Reduce gap between cards */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .services-page {
+    padding: 1.5rem 1rem;
+
+    .services-header h1 {
+      font-size: 1.3rem;
+    }
+
+    .services-header p {
+      font-size: 0.9rem;
+    }
+  }
+
+  .services-list {
+    flex-direction: column; /* Stack cards vertically */
+    align-items: center;
+
+    .service-card {
+      width: 100%; /* Full-width for each card */
+      max-width: 300px; /* Optional max width for better layout */
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .services-page {
+    padding: 1rem;
+
+    .services-header h1 {
+      font-size: 1.2rem; /* Further adjustment for very small screens */
+    }
+
+    .services-header p {
+      font-size: 0.85rem;
+    }
+  }
+
+  .services-list .service-card {
+    padding: 1rem; /* Reduce padding inside the card */
+    .service-icon {
+      width: 80px; /* Smaller icon for compact view */
+      height: 80px;
+    }
+
+    h2 {
+      font-size: 1rem; /* Smaller font size for titles */
+    }
+
+    p {
+      font-size: 0.85rem; /* Smaller font for descriptions */
     }
   }
 }

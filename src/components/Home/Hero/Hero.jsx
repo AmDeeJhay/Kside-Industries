@@ -37,7 +37,7 @@ const Hero = () => {
   };
 
   return (
-    <section className="hero">
+    <section id="Hero.jsx" className="hero">
       <div className="hero-text">
         <h2>Building Reliable<br /> Software That Powers<br /> Engagement</h2>
         <p>At Kside, we create software solutions that<br /> enhance user interactions and foster lasting connections</p>
