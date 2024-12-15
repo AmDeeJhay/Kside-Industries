@@ -1,5 +1,5 @@
 .services-page {
-  padding: 2rem 5rem;
+  padding: 2rem 6rem;
   background-color: #f9f7f7;
 
   .services-header {
@@ -63,7 +63,7 @@
 /* Responsive Styles */
 @media screen and (max-width: 1024px) {
   .services-page {
-    padding: 2rem 2rem; /* Reduce padding for smaller screens */
+    padding: 2rem 4rem; /* Reduce padding for smaller screens */
 
     .services-header h1 {
       font-size: 1.4rem; /* Adjust font size for header */
