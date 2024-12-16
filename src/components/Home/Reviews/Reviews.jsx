@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './Reviews.scss';
+import axios from 'axios';
 import monitor from '../../../assets/images/monitor.png';
 
 const avatars = [
@@ -35,6 +36,16 @@ const Reviews = () => {
     rating: 0,
   });
   const [selectedAvatar, setSelectedAvatar] = useState(null);
+
+  useEffect(() => {
+    // Fetch reviews from the backend
+    axios
+      .get('http://localhost:3000/reviews')
+      .then((response) => setReviewsData(response.data))
+      .catch((error) => console.error('Error fetching reviews:', error));
+  }, []);
+
+
 
   useEffect(() => {
     const interval = setInterval(() => {
